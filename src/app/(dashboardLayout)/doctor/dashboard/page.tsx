@@ -1,11 +1,5 @@
+const DoctorsDashboard = () => {
+    return <div>DoctorsDashboard</div>;
+};
 
-const DoctorsDashboard
- = () => {
-  return (
-    <div>DoctorsDashboard
-        
-    </div>
-  )
-}
-
-export default DoctorsDashboard
+export default DoctorsDashboard;
