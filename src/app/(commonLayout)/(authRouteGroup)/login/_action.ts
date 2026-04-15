@@ -22,12 +22,12 @@ export const loginAction = async (payload: ILoginPayload, redirectPath?: string)
     try {
 
         console.log("login before");
-        
+
         const response = await httpClient.post<ILoginResponse>("/auth/login", parsedPayload.data);
-        
+
         console.log("login after");
         console.log(response.data.user);
-        
+
         const { accessToken, refreshToken, token, user } = response.data;
         const { role, emailVerified, needPasswordChange, email } = user;
         await setTokenInCookies("accessToken", accessToken);

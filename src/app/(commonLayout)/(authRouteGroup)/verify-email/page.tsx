@@ -1,8 +1,5 @@
-
 const VerifyEmailPage = () => {
-  return (
-    <div>VerifyEmailPage</div>
-  )
-}
+    return <div>VerifyEmailPage</div>;
+};
 
-export default VerifyEmailPage
+export default VerifyEmailPage;
