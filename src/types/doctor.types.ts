@@ -1,15 +1,14 @@
 export enum Gender {
     MALE = "MALE",
     FEMALE = "FEMALE",
-    OTHER = "OTHER"
+    OTHER = "OTHER",
 }
 
 export enum UserStatus {
     ACTIVE = "ACTIVE",
-  BLOCKED = "BLOCKED",
-  DELETED = "DELETED",
+    BLOCKED = "BLOCKED",
+    DELETED = "DELETED",
 }
-
 
 export interface IDoctor {
     id: number;
@@ -27,18 +26,18 @@ export interface IDoctor {
     designation: string;
     averageRating: number;
     createdAt: Date;
-    user : {
-        status : UserStatus
+    user: {
+        status: UserStatus;
     };
-    specialties : Array<{
-        specialtyId : string;
-        doctorId : string;
-        specialty : {
-            id : string;
-            title : string;
-            icon : string;
-        }
-    }>
+    specialties: Array<{
+        specialtyId: string;
+        doctorId: string;
+        specialty: {
+            id: string;
+            title: string;
+            icon: string;
+        };
+    }>;
 }
 
 export interface ICreateDoctorPayload {

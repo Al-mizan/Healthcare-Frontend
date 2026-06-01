@@ -1,12 +1,12 @@
 export interface NavItem {
-    title : string,
-    href : string,
-    icon : string
+    title: string,
+    href: string,
+    icon: string
 }
 
 export interface NavSection {
-    title ?: string,
-    items : NavItem[]
+    title?: string,
+    items: NavItem[]
 }
 
 export interface PieChartData {
@@ -20,14 +20,14 @@ export interface BarChartData {
 }
 
 export interface IAdminDashboardData {
-    appointmentCount : number;
-    patientCount : number;
-    doctorCount : number;
-    adminCount : number;
-    superAdminCount : number;
-    paymentCount : number;
-    userCount : number;
-    totalRevenue : number;
-    barChartData : BarChartData[];
-    pieChartData : PieChartData[];
+    appointmentCount: number;
+    patientCount: number;
+    doctorCount: number;
+    adminCount: number;
+    superAdminCount: number;
+    paymentCount: number;
+    userCount: number;
+    totalRevenue: number;
+    barChartData: BarChartData[];
+    pieChartData: PieChartData[];
 }
